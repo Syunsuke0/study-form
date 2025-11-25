@@ -1,7 +1,14 @@
 import "./App.css";
+import SignupForm from "./SignupForm";
+// import UsernameForm from "./UsernameForm";
 
 function App() {
-  return <div>フォームを学ぶ</div>;
+  return (
+    <div>
+      {/* <UsernameForm /> */}
+      <SignupForm />
+    </div>
+  );
 }
 
 export default App;

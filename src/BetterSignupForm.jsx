@@ -11,8 +11,7 @@ const BetterSignupForm = () => {
     const fieldName = e.target.name;
     const value = e.target.value;
     setFormData((currData) => {
-      currData[fieldName] = value;
-      return { ...currData };
+      return { ...currData, [fieldName]: value };
     });
   };
   const handleSubmit = () => {

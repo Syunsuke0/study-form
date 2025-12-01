@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ValidatedShoppingListForm from "./ValidatedShoppingListForm";
 import { v4 as uuid } from "uuid";
+import RHFForm from "./RHFForm";
 
 const ShoppingList = () => {
   const [items, setItems] = useState([
@@ -24,7 +25,8 @@ const ShoppingList = () => {
           </li>
         ))}
       </ul>
-      <ValidatedShoppingListForm addItem={addItem} />
+      {/* <ValidatedShoppingListForm addItem={addItem} /> */}
+      <RHFForm addItem={addItem} />
     </div>
   );
 };
